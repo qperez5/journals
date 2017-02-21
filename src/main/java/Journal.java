@@ -15,29 +15,23 @@ public class Journal implements Comparable<Journal> {
         this.score = score;
     }
 
+    public Journal(String name, float score, boolean review) {
+        this.name = name;
+        this.score = score;
+        this.review = review;
+    }
+
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Float getScore() {
         return score;
     }
 
-    public void setScore(Float score) {
-        this.score = score;
-    }
-
     public boolean isReview() {
         return review;
-    }
-
-    public void setReview(boolean review) {
-        this.review = review;
     }
 
     public int compareTo(Journal other) {

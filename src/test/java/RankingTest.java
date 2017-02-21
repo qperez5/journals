@@ -61,8 +61,7 @@ public class RankingTest {
     @Test
     public void testExcludingReview(){
 
-        Journal journalA = new Journal("Journal A", 5.6f);
-        journalA.setReview(true);
+        Journal journalA = new Journal("Journal A", 5.6f,true);
         Journal journalB = new Journal("Journal B", 2.4f);
         Journal journalC = new Journal("Journal C", 3.1f);
 
